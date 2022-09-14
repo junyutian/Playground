@@ -45,6 +45,11 @@ Cover the following four classes
 - LogFile
 - LogServlet
 
+**Note**: test the big file locally, and the test file is too big to upload to github.
+
+https://user-images.githubusercontent.com/40179591/190240176-fc68b984-9762-4b67-b425-0bb3f3956b99.mp4
+
+
 ### Test cases
 #### Missing input filename
 http://localhost:8080/log-collection?filename=&entries=&keyword=
