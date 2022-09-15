@@ -22,9 +22,12 @@ Supported parameters
 ---
 
 ## Deployment & Run
-The web application is packed as a WAR file. To generate the WAR file, you could use IDE like Intellij.
-
+The web application is packed as a WAR file. To generate the WAR file
+- Use IDE like Intellij
 ![RunDebug Configurations 2022-09-14 at 1 50 44 PM](https://user-images.githubusercontent.com/40179591/190226835-346abd68-3bd6-48cc-96ed-7597f5a2ee99.jpg)
+- Use maven command: mvn package
+![-zsh 2022-09-15 at 7 51 27 AM](https://user-images.githubusercontent.com/40179591/190396962-1baa09fc-4a9a-4811-8899-2db0a7da6a20.jpg)
+
 
 - Copy the WAR file into $CATALINA_HOME\webapps directory.
 - Restart the Tomcat server. 
@@ -44,6 +47,9 @@ Cover the following four classes
 - LogResponse
 - LogFile
 - LogServlet
+
+Run unit test in Intellij or in commend **mvn test**
+![-zsh 2022-09-15 at 7 57 52 AM](https://user-images.githubusercontent.com/40179591/190397900-b994e3d5-d77a-4ad6-83fb-a97ae15cc692.jpg)
 
 **Note**: test the big file locally, and the test file is too big to upload to github.
 
