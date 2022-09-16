@@ -31,7 +31,7 @@ The web application is packed as a WAR file. To generate the WAR file
 
 - Copy the WAR file into $CATALINA_HOME\webapps directory.
 - Restart the Tomcat server. 
-- If run in local, go to http://localhost:8080, will get the following simple UI to accept request parameters (by index.jsp).
+- If run in local, go to http://localhost:8080/demo1-1.0-SNAPSHOT/, will get the following simple UI to accept request parameters (by index.jsp).
 
 ![Get Latest Log Lines 2022-09-14 at 1 13 46 PM](https://user-images.githubusercontent.com/40179591/190219560-64e355f6-c696-441c-a1cd-dd71a14ef42c.jpg)
 
