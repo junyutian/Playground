@@ -23,13 +23,20 @@ Supported parameters
 
 ## Deployment & Run
 The web application is packed as a WAR file. To generate the WAR file
-- Use IDE like Intellij
-![RunDebug Configurations 2022-09-14 at 1 50 44 PM](https://user-images.githubusercontent.com/40179591/190226835-346abd68-3bd6-48cc-96ed-7597f5a2ee99.jpg)
-- Use maven command: mvn package
-![-zsh 2022-09-15 at 7 51 27 AM](https://user-images.githubusercontent.com/40179591/190396962-1baa09fc-4a9a-4811-8899-2db0a7da6a20.jpg)
+- Checkout
+  - git clone https://github.com/junyutian/Playground.git
+  - cd Playground
+  - git checkout master
+  ![-zsh 2022-09-16 at 6 14 11 AM](https://user-images.githubusercontent.com/40179591/190616630-22eb3311-2af1-4ce3-bc37-2a6fcb8f8138.jpg)
 
-
-- Copy the WAR file into $CATALINA_HOME\webapps directory.
+- Build  
+  - Use maven command
+    - cd demo1
+    - mvn package
+    ![-zsh 2022-09-15 at 7 51 27 AM](https://user-images.githubusercontent.com/40179591/190396962-1baa09fc-4a9a-4811-8899-2db0a7da6a20.jpg)
+  - or Use IDE like Intellij
+  ![RunDebug Configurations 2022-09-14 at 1 50 44 PM](https://user-images.githubusercontent.com/40179591/190226835-346abd68-3bd6-48cc-96ed-7597f5a2ee99.jpg)
+- Copy the WAR file from target into $CATALINA_HOME/webapps directory.
 - Restart the Tomcat server. 
 - If run in local, go to http://localhost:8080/demo1-1.0-SNAPSHOT/, will get the following simple UI to accept request parameters (by index.jsp).
 
@@ -58,12 +65,12 @@ https://user-images.githubusercontent.com/40179591/190240176-fc68b984-9762-4b67-
 
 ### Test cases
 #### Missing input filename
-http://localhost:8080/log-collection?filename=&entries=&keyword=
+http://localhost:8080/demo1-1.0-SNAPSHOT/log-collection?filename=&entries=&keyword=
 #### Filename not exist
-http://localhost:8080/log-collection?filename=aa&entries=&keyword=
+http://localhost:8080/demo1-1.0-SNAPSHOT/log-collection?filename=aa&entries=&keyword=
 #### Invalid entries
-http://localhost:8080/log-collection?filename=system.log&entries=-1&keyword=
+http://localhost:8080/demo1-1.0-SNAPSHOT/log-collection?filename=system.log&entries=-1&keyword=
 #### Valid case
-http://localhost:8080/log-collection?filename=system.log&entries=10&keyword=SIG
+http://localhost:8080/demo1-1.0-SNAPSHOT/log-collection?filename=system.log&entries=10&keyword=SIG
 
 ![localhost8081log-collectionfilename=system log entries=10 keyword=SIG 2022-09-14 at 2 11 40 PM](https://user-images.githubusercontent.com/40179591/190230718-5146d62d-27df-4301-82bf-6bc0168eaa57.jpg)
