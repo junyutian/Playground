@@ -37,7 +37,7 @@ The web application is packed as a WAR file. To generate the WAR file
   - or Use IDE like Intellij
   ![RunDebug Configurations 2022-09-14 at 1 50 44 PM](https://user-images.githubusercontent.com/40179591/190226835-346abd68-3bd6-48cc-96ed-7597f5a2ee99.jpg)
 - Copy the WAR file from target into $CATALINA_HOME/webapps directory.
-- Restart the Tomcat server. 
+- Restart the Tomcat server (the tomcat version used for the demo is 9.0.65). 
 - If run in local, go to http://localhost:8080/demo1-1.0-SNAPSHOT/, will get the following simple UI to accept request parameters (by index.jsp).
 
 ![Get Latest Log Lines 2022-09-14 at 1 13 46 PM](https://user-images.githubusercontent.com/40179591/190219560-64e355f6-c696-441c-a1cd-dd71a14ef42c.jpg)
